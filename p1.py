@@ -5,7 +5,7 @@ from streamlit_option_menu import option_menu
 with st.sidebar:
     selected = option_menu(
         menu_title="Main Menu",  # عنوان القائمة
-        options=["Dataset Overview", "Data Preparation", "Purchases Prediction", "Meet Our Team"],  # الأقسام
+        options=["Dataset Overview", "Data Preparation", "RFM Analysis", "Meet Our Team"],  # الأقسام
         icons=["info-circle", "bar-chart-line", "graph-up-arrow", "people-fill"],  # أيقونات الأقسام
         menu_icon="cast",  # أيقونة القائمة
         default_index=0,  # الخيار الافتراضي
@@ -163,34 +163,19 @@ elif selected == "Data Preparation":
 
 
 
-elif selected == "Purchases Prediction":
+elif selected == "RFM Analysis":
 
-    st.markdown("## EData Cleaning Process :")
-    intro_image_url = "https://raw.githubusercontent.com/mohamedelgendy10/DEPI-Graduation-Project/main/E7.jpg"  # الرابط المباشر للصورة الافتتاحية
-    st.image(intro_image_url, caption="", use_column_width=True)
-
-    st.markdown("## Handling missing values:")
-    intro_image_url = "https://raw.githubusercontent.com/mohamedelgendy10/DEPI-Graduation-Project/main/E8.jpg"  # الرابط المباشر للصورة الافتتاحية
-    st.image(intro_image_url, caption="", use_column_width=True)
-
-    st.markdown("## Handling Invalid Age Entries:")
+    st.markdown("## Dataset Overview")
     st.markdown("""
-    Issue: Some age values, such as 174, were clearly unrealistic, suggesting data entry errors or anomalies.
+    The dataset consists of four sheets, each providing key insights into different aspects of customer information:
 
-    Solution: Removed the rows with these erroneous values to maintain the integrity of the dataset.
+    - **Customer Demographic**: Contains details about customers' age, gender, and other demographic attributes.
 
-    """)
+    - **New Customer List**: Includes information on newly acquired customers.
 
-   
-    intro_image_url = "https://raw.githubusercontent.com/mohamedelgendy10/DEPI-Graduation-Project/main/E9.jpg"  # الرابط المباشر للصورة الافتتاحية
-    st.image(intro_image_url, caption="", use_column_width=True)
+    - **Customer Address**: Stores address details such as state, postcode, and country.
 
-    st.markdown("## State Abbreviations Inconsistency:")
-    st.markdown("""
-    Issue: The state column included a mix of full state names and abbreviations, such as 'NSW' and 'New South Wales’.
-
-    Solution: Replaced all abbreviations with the corresponding full state names to ensure uniformity.
-    
+    - **Transactions**: Records all transaction details, including product purchases and sales data.
     """)
 
 elif selected == "Meet Our Team":
