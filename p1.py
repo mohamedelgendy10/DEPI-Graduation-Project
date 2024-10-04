@@ -1,9 +1,5 @@
 import streamlit as st
-import pandas as pd
 from streamlit_option_menu import option_menu
-
-# إعداد صفحة التطبيق (الأيقونة والعنوان)
-st.set_page_config(page_title="DEPI GP", page_icon="https://raw.githubusercontent.com/mohamedelgendy10/DEPI-Graduation-Project/main/images%20(2).png", layout="wide")
 
 # شريط جانبي للتنقل مع الأيقونات
 with st.sidebar:
@@ -30,42 +26,24 @@ with col2:
 
 # عرض المحتوى بناءً على القسم المختار
 st.markdown("---")  # خط فاصل لتوضيح مكان المحتوى
-if selected == "Dataset Overview":
-    st.title("Dataset Overview")
-    st.markdown("### Overview of the Dataset")
-    st.markdown("This section provides detailed information about the dataset used in this project, including the structure of the data, the variables, and their types.")
-    # يمكنك إضافة تفاصيل إضافية حول البيانات هنا
 
-elif selected == "RFM Analysis":
-    st.title("RFM Analysis")
-    st.markdown("### RFM Analysis Overview")
-    st.markdown("Here you can perform RFM analysis.")
-    # يمكنك إضافة محتوى إضافي حسب الحاجة
-
-elif selected == "Purchases Prediction":
-    st.title("Purchases Prediction")
-    st.markdown("### Purchases Prediction Overview")
-    st.markdown("Here you can predict future purchases based on historical data.")
-    # يمكنك إضافة محتوى إضافي حسب الحاجة
-
-elif selected == "Meet Our Team":
+if selected == "Meet Our Team":
     st.title("Meet Our Team")
     
-    # معلومات الفريق مع الروابط إلى حسابات LinkedIn
-    st.markdown("""
-    **Mohamed Elgendy**  
-    Role: Project Lead  
-    [LinkedIn Profile](https://www.linkedin.com/in/mohamed-elgendy)  
-    """)
+    # تفاصيل الفريق
+    team_members = [
+        {"name": "Mohamed Elgendy", "role": "Project Lead", "linkedin": "www.linkedin.com/in/mohamed-rezk-elgendy"},
+        {"name": "Member 2", "role": "Data Analyst", "linkedin": "https://www.linkedin.com/in/member2"},
+        {"name": "Member 3", "role": "Developer", "linkedin": "https://www.linkedin.com/in/member3"},
+        {"name": "Member 4", "role": "Data Scientist", "linkedin": "https://www.linkedin.com/in/member4"}
+    ]
 
-    st.markdown("""
-    **Member 2**  
-    Role: Data Analyst  
-    [LinkedIn Profile](https://www.linkedin.com/in/member2-linkedin)  
-    """)
-
-    st.markdown("""
-    **Member 3**  
-    Role: Developer  
-    [LinkedIn Profile](https://www.linkedin.com/in/member3-linkedin)  
-    """)
+    # تنظيم أعضاء الفريق
+    for member in team_members:
+        col1, col2 = st.columns([1, 9])
+        with col1:
+            st.image("https://cdn-icons-png.flaticon.com/512/174/174857.png", width=30)  # أيقونة LinkedIn
+        with col2:
+            st.markdown(f"**{member['name']}**")
+            st.markdown(f"*{member['role']}*")
+            st.markdown(f"[![LinkedIn]('https://cdn-icons-png.flaticon.com/512/174/174857.png')](https://{member['linkedin']})")
