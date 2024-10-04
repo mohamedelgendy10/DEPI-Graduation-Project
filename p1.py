@@ -17,7 +17,7 @@ col1, col2 = st.columns([5, 0.001])  # عمود للشعار الأيسر وآخ
 
 # إضافة الشعار في أقصى اليسار
 with col1:
-   logo_left_url = "https://raw.githubusercontent.com/mohamedelgendy10/DEPI-Graduation-Project/main/images%20(2).png"  # الشعار الأيسر
+    logo_left_url = "https://raw.githubusercontent.com/mohamedelgendy10/DEPI-Graduation-Project/main/images%20(2).png"  # الشعار الأيسر
     st.image(logo_left_url, width=125)  # حجم الشعار 50 بيكسل
 
 # إضافة الشعار في أقصى اليمين
