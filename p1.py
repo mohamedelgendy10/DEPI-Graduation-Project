@@ -93,6 +93,60 @@ elif selected == "Data Preparation":
     
     """)
 
+    st.markdown("## Job title has 195 value:")
+    st.markdown("""
+    Solution: Used function to categorize all values into 10 categories
+ 
+    """)
+    intro_image_url = "https://raw.githubusercontent.com/mohamedelgendy10/DEPI-Graduation-Project/main/E10.jpg"  # الرابط المباشر للصورة الافتتاحية
+    st.image(intro_image_url, caption="", use_column_width=True)
+
+    st.markdown("## Missing Customer IDs in the Main Table:")
+    st.markdown("""
+    Issue: Some customer IDs were present in the address table but had no matching records in the main customer table.
+
+    Solution: Removed these entries from the address table to ensure that all customer IDs have corresponding records in the main table
+
+    """)
+
+    st.markdown("## Handling Missing Values:")
+    st.markdown("""
+    Customers Table:
+
+    Missing Last Names: Several customer records had empty values in the last_name column, resulting in incomplete names.
+
+    Solution: Combined the first_name and last_name columns into a new full_name column to fill in the gaps.
+
+    Missing Job Titles, Industry Categories, and Tenure: Some records had missing values, leading to incomplete data.
+
+    Solution: Replaced missing entries in the job_title and job_industry_category columns with 'N/A' and set missing tenure values to 0 to indicate that the data was unavailable.
+
+    """)
+
+st.markdown("## Transactions Table:")
+    st.markdown("""
+    Several columns, such as brand, product_line, product_class, and product_size, had missing values, causing incomplete records.
+    Solution:
+    Filled Missing Categorical Values: Used .fillna('N/A') to replace all missing values in these columns for consistency.
+    Filled Missing Numerical Values: Used KNN Imputer to estimate missing values in online_order, standard_cost, and product_first_sold_date by finding the 3 closest matches from the data.
+
+    """)
+
+st.markdown("## Data Merging:")
+    st.markdown("""
+    Problem: There were two separate tables:
+    Old Customers Table: Contained customer records with assigned IDs.
+    New Customers Table: Included new customer records without IDs.
+    This separation made it challenging to have a unified dataset for complete analysis.
+
+    Solution:
+    Assign IDs to New Customers: Created unique IDs for new customers starting from 4001 to avoid conflicts with existing IDs.
+
+    Merge Customer Information: Combined the old and new customer tables based on shared columns such as name, gender, and date of birth.
+
+    Merge Address Data: Unified address details like address, postcode, state, country, and property valuation for both old and new customers.
+
+    """)
     
 
 elif selected == "Purchases Prediction":
