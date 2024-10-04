@@ -51,6 +51,19 @@ if selected == "Dataset Overview":
     intro_image_url = "https://raw.githubusercontent.com/mohamedelgendy10/DEPI-Graduation-Project/main/E2.jpg"  # الرابط المباشر للصورة الافتتاحية
     st.image(intro_image_url, caption="", use_column_width=True)
 
+    
+    st.markdown("## Customers Address Sheet")
+    intro_image_url = "https://raw.githubusercontent.com/mohamedelgendy10/DEPI-Graduation-Project/main/E3.jpg"  # الرابط المباشر للصورة الافتتاحية
+    st.image(intro_image_url, caption="", use_column_width=True)
+
+    st.markdown("## Transactions Sheet")
+    intro_image_url = "https://raw.githubusercontent.com/mohamedelgendy10/DEPI-Graduation-Project/main/E4.jpg"  # الرابط المباشر للصورة الافتتاحية
+    st.image(intro_image_url, caption="", use_column_width=True)
+
+    st.markdown("## ERD Diagram")
+    intro_image_url = "https://raw.githubusercontent.com/mohamedelgendy10/DEPI-Graduation-Project/main/E5.PNG"  # الرابط المباشر للصورة الافتتاحية
+    st.image(intro_image_url, caption="", use_column_width=True)
+
 elif selected == "RFM Analysis":
     st.title("RFM Analysis")
     # محتوى قسم RFM Analysis
