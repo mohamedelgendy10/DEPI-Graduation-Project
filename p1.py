@@ -91,7 +91,19 @@ elif selected == "Purchases Prediction":
     Solution: Removed the rows with these erroneous values to maintain the integrity of the dataset.
 
     """)
+
+   
+    intro_image_url = "https://raw.githubusercontent.com/mohamedelgendy10/DEPI-Graduation-Project/main/E9.jpg"  # الرابط المباشر للصورة الافتتاحية
+    st.image(intro_image_url, caption="", use_column_width=True)
+
+    st.markdown("## State Abbreviations Inconsistency:")
+    st.markdown("""
+    Issue: The state column included a mix of full state names and abbreviations, such as 'NSW' and 'New South Wales’.
+
+    Solution: Replaced all abbreviations with the corresponding full state names to ensure uniformity.
     
+    """)
+
 elif selected == "Meet Our Team":
     st.title("Meet Our Team")
     
