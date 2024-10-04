@@ -97,7 +97,33 @@ elif selected == "Data Preparation":
 
 elif selected == "Purchases Prediction":
 
+    st.markdown("## EData Cleaning Process :")
+    intro_image_url = "https://raw.githubusercontent.com/mohamedelgendy10/DEPI-Graduation-Project/main/E7.jpg"  # الرابط المباشر للصورة الافتتاحية
+    st.image(intro_image_url, caption="", use_column_width=True)
 
+    st.markdown("## Handling missing values:")
+    intro_image_url = "https://raw.githubusercontent.com/mohamedelgendy10/DEPI-Graduation-Project/main/E8.jpg"  # الرابط المباشر للصورة الافتتاحية
+    st.image(intro_image_url, caption="", use_column_width=True)
+
+    st.markdown("## Handling Invalid Age Entries:")
+    st.markdown("""
+    Issue: Some age values, such as 174, were clearly unrealistic, suggesting data entry errors or anomalies.
+
+    Solution: Removed the rows with these erroneous values to maintain the integrity of the dataset.
+
+    """)
+
+   
+    intro_image_url = "https://raw.githubusercontent.com/mohamedelgendy10/DEPI-Graduation-Project/main/E9.jpg"  # الرابط المباشر للصورة الافتتاحية
+    st.image(intro_image_url, caption="", use_column_width=True)
+
+    st.markdown("## State Abbreviations Inconsistency:")
+    st.markdown("""
+    Issue: The state column included a mix of full state names and abbreviations, such as 'NSW' and 'New South Wales’.
+
+    Solution: Replaced all abbreviations with the corresponding full state names to ensure uniformity.
+    
+    """)
 
 elif selected == "Meet Our Team":
     st.title("Meet Our Team")
