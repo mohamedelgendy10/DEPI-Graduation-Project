@@ -73,17 +73,6 @@ elif selected == "Data Preparation":
     intro_image_url = "https://raw.githubusercontent.com/mohamedelgendy10/DEPI-Graduation-Project/main/E8.jpg"  # الرابط المباشر للصورة الافتتاحية
     st.image(intro_image_url, caption="", use_column_width=True)
 
-    
-
-elif selected == "Purchases Prediction":
-    st.markdown("## EData Cleaning Process :")
-    intro_image_url = "https://raw.githubusercontent.com/mohamedelgendy10/DEPI-Graduation-Project/main/E7.jpg"  # الرابط المباشر للصورة الافتتاحية
-    st.image(intro_image_url, caption="", use_column_width=True)
-
-    st.markdown("## Handling missing values:")
-    intro_image_url = "https://raw.githubusercontent.com/mohamedelgendy10/DEPI-Graduation-Project/main/E8.jpg"  # الرابط المباشر للصورة الافتتاحية
-    st.image(intro_image_url, caption="", use_column_width=True)
-
     st.markdown("## Handling Invalid Age Entries:")
     st.markdown("""
     Issue: Some age values, such as 174, were clearly unrealistic, suggesting data entry errors or anomalies.
@@ -103,6 +92,11 @@ elif selected == "Purchases Prediction":
     Solution: Replaced all abbreviations with the corresponding full state names to ensure uniformity.
     
     """)
+
+    
+
+elif selected == "Purchases Prediction":
+
 
 elif selected == "Meet Our Team":
     st.title("Meet Our Team")
