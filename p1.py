@@ -64,9 +64,16 @@ if selected == "Dataset Overview":
     intro_image_url = "https://raw.githubusercontent.com/mohamedelgendy10/DEPI-Graduation-Project/main/E6.jpg"  # الرابط المباشر للصورة الافتتاحية
     st.image(intro_image_url, caption="", use_column_width=True)
 
-elif selected == "RFM Analysis":
-    st.title("RFM Analysis")
-    # محتوى قسم RFM Analysis
+elif selected == "Data Preparation":
+    st.markdown("## EData Cleaning Process :")
+    intro_image_url = "https://raw.githubusercontent.com/mohamedelgendy10/DEPI-Graduation-Project/main/E7.jpg"  # الرابط المباشر للصورة الافتتاحية
+    st.image(intro_image_url, caption="", use_column_width=True)
+
+    st.markdown("## Handling missing values:")
+    intro_image_url = "https://raw.githubusercontent.com/mohamedelgendy10/DEPI-Graduation-Project/main/E8.jpg"  # الرابط المباشر للصورة الافتتاحية
+    st.image(intro_image_url, caption="", use_column_width=True)
+
+    
 
 elif selected == "Purchases Prediction":
     st.markdown("## EData Cleaning Process :")
@@ -77,6 +84,14 @@ elif selected == "Purchases Prediction":
     intro_image_url = "https://raw.githubusercontent.com/mohamedelgendy10/DEPI-Graduation-Project/main/E8.jpg"  # الرابط المباشر للصورة الافتتاحية
     st.image(intro_image_url, caption="", use_column_width=True)
 
+    st.markdown("## Handling Invalid Age Entries:")
+    st.markdown("""
+    Issue: Some age values, such as 174, were clearly unrealistic, suggesting data entry errors or anomalies.
+
+    Solution: Removed the rows with these erroneous values to maintain the integrity of the dataset.
+
+    """)
+    
 elif selected == "Meet Our Team":
     st.title("Meet Our Team")
     
