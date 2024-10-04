@@ -31,7 +31,7 @@ if selected == "Dataset Overview":
     st.title("Dataset Overview")
     
     # إضافة صورة افتتاحية
-    intro_image_url = "https://path_to_your_intro_image.png"  # ضع رابط الصورة الافتتاحية هنا
+    intro_image_url = "https://raw.githubusercontent.com/mohamedelgendy10/DEPI-Graduation-Project/main/E0.jpg"  # الرابط المباشر للصورة الافتتاحية
     st.image(intro_image_url, caption="Welcome to the Dataset Overview", use_column_width=True)
     
     # محتوى القسم
