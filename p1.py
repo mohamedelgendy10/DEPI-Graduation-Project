@@ -276,7 +276,7 @@ elif selected == "Meet Our Team":
     # العضو الأول - Mohamed Elgendy
     with col1:
         st.markdown("### Mohamed Elgendy")
-        st.markdown("**Project Lead**")
+        st.markdown("****")
         linkedin_icon_mohamed = """
             <a href="https://www.linkedin.com/in/mohamed-rezk-elgendy" target="_blank">
                 <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" width="30">
@@ -287,7 +287,7 @@ elif selected == "Meet Our Team":
     # العضو الثاني - Member 2
     with col2:
         st.markdown("###Ahmed Elsayed Mohamed ")
-        st.markdown("**Data Analyst**")
+        st.markdown("****")
         linkedin_icon_member2 = """
             <a href="https://www.linkedin.com/inahmed-elsayed-406366218?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bx%2FiMBw" target="_blank">
                 <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" width="30">
@@ -302,7 +302,7 @@ elif selected == "Meet Our Team":
     # العضو الثالث - Member 3
     with col3:
         st.markdown("###Abdelerahman Mohamed faried")
-        st.markdown("**Developer**")
+        st.markdown("**r**")
         linkedin_icon_member3 = """
             <a href="https://www.linkedin.com/in/abdelrahman-mohamed-7750532a6" target="_blank">
                 <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" width="30">
@@ -313,7 +313,7 @@ elif selected == "Meet Our Team":
     # العضو الرابع - Member 4
     with col4:
         st.markdown("###Mennatullah Muhammad Mahmoud ")
-        st.markdown("**Data Scientist**")
+        st.markdown("****")
         linkedin_icon_member4 = """
             <a href="https://www.linkedin.com/in/mennatullah-muhammad-b15826232/" target="_blank">
                 <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" width="30">
