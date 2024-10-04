@@ -1,4 +1,5 @@
 import streamlit as st
+import pandas as pd
 from streamlit_option_menu import option_menu
 
 # شريط جانبي للتنقل مع الأيقونات
@@ -27,57 +28,51 @@ with col2:
 # عرض المحتوى بناءً على القسم المختار
 st.markdown("---")  # خط فاصل لتوضيح مكان المحتوى
 
-if selected == "Meet Our Team":
-    st.title("Meet Our Team")
+# قسم Dataset Overview مع صورة افتتاحية
+if selected == "Dataset Overview":
+    st.title("Dataset Overview")
+
+    # إضافة صورة افتتاحية
+    intro_image_url = "https://path_to_your_intro_image.png"  # ضع رابط الصورة الافتتاحية هنا
+    st.image(intro_image_url, caption="Welcome to the Dataset Overview Section", use_column_width=True)
+
+    # إضافة المحتوى الخاص بالقسم
+    st.markdown("### Overview of the Dataset")
+    st.markdown("""
+    This section provides detailed information about the dataset used in this project.
+    You will see the structure of the data, the variables, and their basic statistics.
+    """)
+
+    # تحميل البيانات
+    uploaded_file = st.file_uploader("Upload your dataset (CSV or Excel)", type=["csv", "xlsx"])
     
-    # تنظيم الفريق في صفين
-    st.write("---")
-    col1, col2 = st.columns([1, 1])
+    if uploaded_file is not None:
+        try:
+            if uploaded_file.name.endswith(".csv"):
+                data = pd.read_csv(uploaded_file)
+            elif uploaded_file.name.endswith(".xlsx"):
+                data = pd.read_excel(uploaded_file)
 
-    # العضو الأول - Mohamed Elgendy
-    with col1:
-        st.markdown("### Mohamed Elgendy")
-        st.markdown("**Project Lead**")
-        linkedin_icon_mohamed = """
-            <a href="https://www.linkedin.com/in/mohamed-rezk-elgendy" target="_blank">
-                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" width="30">
-            </a>
-        """
-        st.markdown(linkedin_icon_mohamed, unsafe_allow_html=True)
+            st.success("Dataset loaded successfully!")
 
-    # العضو الثاني - Member 2
-    with col2:
-        st.markdown("### Member 2")
-        st.markdown("**Data Analyst**")
-        linkedin_icon_member2 = """
-            <a href="https://www.linkedin.com/in/member2" target="_blank">
-                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" width="30">
-            </a>
-        """
-        st.markdown(linkedin_icon_member2, unsafe_allow_html=True)
+            # عرض هيكل البيانات
+            st.markdown("### Data Shape")
+            st.write(f"Number of rows: {data.shape[0]}")
+            st.write(f"Number of columns: {data.shape[1]}")
 
-    st.write("---")
+            # عرض الإحصاءات الوصفية
+            st.markdown("### Descriptive Statistics")
+            st.write(data.describe())
 
-    col3, col4 = st.columns([1, 1])
+            # عرض الأعمدة
+            st.markdown("### Column Names and Types")
+            st.write(data.dtypes)
 
-    # العضو الثالث - Member 3
-    with col3:
-        st.markdown("### Member 3")
-        st.markdown("**Developer**")
-        linkedin_icon_member3 = """
-            <a href="https://www.linkedin.com/in/member3" target="_blank">
-                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" width="30">
-            </a>
-        """
-        st.markdown(linkedin_icon_member3, unsafe_allow_html=True)
-
-    # العضو الرابع - Member 4
-    with col4:
-        st.markdown("### Member 4")
-        st.markdown("**Data Scientist**")
-        linkedin_icon_member4 = """
-            <a href="https://www.linkedin.com/in/member4" target="_blank">
-                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" width="30">
-            </a>
-        """
-        st.markdown(linkedin_icon_member4, unsafe_allow_html=True)
+            # معاينة البيانات (أول 5 صفوف)
+            st.markdown("### Data Preview (First 5 Rows)")
+            st.write(data.head())
+        
+        except Exception as e:
+            st.error(f"Error loading dataset: {e}")
+    else:
+        st.info("Please upload a dataset to start the overview.")
