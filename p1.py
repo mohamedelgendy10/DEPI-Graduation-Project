@@ -17,13 +17,13 @@ col1, col2 = st.columns([5, 0.001])  # عمود للشعار الأيسر وآخ
 
 # إضافة الشعار في أقصى اليسار
 with col1:
-    logo_left_path = "https://github.com/mohamedelgendy10/DEPI-Graduation-Project/blob/main/images%20(2).png"  # تأكد من تحديث المسار حسب موقع الشعار لديك
-    st.image(logo_left_path, width=125)  # حجم الشعار 50 بيكسل
+   logo_left_url = "https://raw.githubusercontent.com/mohamedelgendy10/DEPI-Graduation-Project/main/images%20(2).png"  # الشعار الأيسر
+    st.image(logo_left_url, width=125)  # حجم الشعار 50 بيكسل
 
 # إضافة الشعار في أقصى اليمين
 with col2:
-    logo_right_path = "https://github.com/mohamedelgendy10/DEPI-Graduation-Project/blob/main/20231126120517!%D9%88%D8%B2%D8%A7%D8%B1%D8%A9_%D8%A7%D9%84%D8%A7%D8%AA%D8%B5%D8%A7%D9%84%D8%A7%D8%AA_%D9%88%D8%AA%D9%83%D9%86%D9%88%D9%84%D9%88%D8%AC%D9%8A%D8%A7_%D8%A7%D9%84%D9%85%D8%B9%D9%84%D9%88%D9%85%D8%A7%D8%AA.png"  # تأكد من تحديث المسار حسب موقع الشعار لديك
-    st.image(logo_right_path, width=125)  # حجم الشعار 50 بيكسل
+    logo_right_url = "https://raw.githubusercontent.com/mohamedelgendy10/DEPI-Graduation-Project/main/20231126120517!%D9%88%D8%B2%D8%A7%D8%B1%D8%A9_%D8%A7%D9%84%D8%A7%D8%AA%D8%B5%D8%A7%D9%84%D8%A7%D8%AA_%D9%88%D8%AA%D9%83%D9%86%D9%88%D9%84%D9%88%D8%AC%D9%8A%D8%A7_%D8%A7%D9%84%D9%85%D8%B9%D9%84%D9%88%D9%85%D8%A7%D8%AA.png"  # الشعار الأيمن
+    st.image(logo_right_url, width=125)  # حجم الشعار 50 بيكسل
 
 # عرض المحتوى بناءً على القسم المختار
 st.markdown("---")  # خط فاصل لتوضيح مكان المحتوى
