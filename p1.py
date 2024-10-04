@@ -34,30 +34,54 @@ if selected == "Meet Our Team":
     st.write("---")
     col1, col2 = st.columns([1, 1])
 
+    # العضو الأول - Mohamed Elgendy
     with col1:
         st.image("https://cdn-icons-png.flaticon.com/512/174/174857.png", width=150)
         st.markdown("### Mohamed Elgendy")
         st.markdown("**Project Lead**")
-        st.markdown("[LinkedIn](https://www.linkedin.com/in/mohamed-rezk-elgendy)")
-    
+        linkedin_icon_mohamed = """
+            <a href="https://www.linkedin.com/in/mohamed-rezk-elgendy" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" width="30">
+            </a>
+        """
+        st.markdown(linkedin_icon_mohamed, unsafe_allow_html=True)
+
+    # العضو الثاني - Member 2
     with col2:
         st.image("https://cdn-icons-png.flaticon.com/512/174/174857.png", width=150)
         st.markdown("### Member 2")
         st.markdown("**Data Analyst**")
-        st.markdown("[LinkedIn](https://www.linkedin.com/in/member2)")
-    
+        linkedin_icon_member2 = """
+            <a href="https://www.linkedin.com/in/member2" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" width="30">
+            </a>
+        """
+        st.markdown(linkedin_icon_member2, unsafe_allow_html=True)
+
     st.write("---")
-    
+
     col3, col4 = st.columns([1, 1])
 
+    # العضو الثالث - Member 3
     with col3:
         st.image("https://cdn-icons-png.flaticon.com/512/174/174857.png", width=150)
         st.markdown("### Member 3")
         st.markdown("**Developer**")
-        st.markdown("[LinkedIn](https://www.linkedin.com/in/member3)")
-    
+        linkedin_icon_member3 = """
+            <a href="https://www.linkedin.com/in/member3" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" width="30">
+            </a>
+        """
+        st.markdown(linkedin_icon_member3, unsafe_allow_html=True)
+
+    # العضو الرابع - Member 4
     with col4:
         st.image("https://cdn-icons-png.flaticon.com/512/174/174857.png", width=150)
         st.markdown("### Member 4")
         st.markdown("**Data Scientist**")
-        st.markdown("[LinkedIn](https://www.linkedin.com/in/member4)")
+        linkedin_icon_member4 = """
+            <a href="https://www.linkedin.com/in/member4" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" width="30">
+            </a>
+        """
+        st.markdown(linkedin_icon_member4, unsafe_allow_html=True)
