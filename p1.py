@@ -2,6 +2,9 @@ import streamlit as st
 import pandas as pd
 from streamlit_option_menu import option_menu
 
+# إعداد صفحة التطبيق (الأيقونة والعنوان)
+st.set_page_config(page_title="DEPI GP", page_icon="https://raw.githubusercontent.com/mohamedelgendy10/DEPI-Graduation-Project/main/images%20(2).png", layout="wide")
+
 # شريط جانبي للتنقل مع الأيقونات
 with st.sidebar:
     selected = option_menu(
