@@ -61,7 +61,7 @@ if selected == "Dataset Overview":
     st.image(intro_image_url, caption="", use_column_width=True)
 
     st.markdown("## ERD Diagram")
-    intro_image_url = "https://raw.githubusercontent.com/mohamedelgendy10/DEPI-Graduation-Project/main/E5.PNG"  # الرابط المباشر للصورة الافتتاحية
+    intro_image_url = "https://raw.githubusercontent.com/mohamedelgendy10/DEPI-Graduation-Project/main/E6.jpg"  # الرابط المباشر للصورة الافتتاحية
     st.image(intro_image_url, caption="", use_column_width=True)
 
 elif selected == "RFM Analysis":
