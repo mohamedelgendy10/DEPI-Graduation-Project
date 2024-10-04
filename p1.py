@@ -5,7 +5,7 @@ from streamlit_option_menu import option_menu
 with st.sidebar:
     selected = option_menu(
         menu_title="Main Menu",  # عنوان القائمة
-        options=["Dataset Overview", "RFM Analysis", "Purchases Prediction", "Meet Our Team"],  # الأقسام
+        options=["Dataset Overview", "Data Preparation", "Purchases Prediction", "Meet Our Team"],  # الأقسام
         icons=["info-circle", "bar-chart-line", "graph-up-arrow", "people-fill"],  # أيقونات الأقسام
         menu_icon="cast",  # أيقونة القائمة
         default_index=0,  # الخيار الافتراضي
@@ -31,7 +31,7 @@ if selected == "Dataset Overview":
     
     # إضافة صورة افتتاحية
     intro_image_url = "https://raw.githubusercontent.com/mohamedelgendy10/DEPI-Graduation-Project/main/E0.jpg"  # الرابط المباشر للصورة الافتتاحية
-    st.image(intro_image_url, caption="Welcome to the Dataset Overview", use_column_width=True)
+    st.image(intro_image_url, caption="", use_column_width=True)
 
     # إضافة العنوان والنص
     st.markdown("## Dataset Overview")
@@ -69,8 +69,13 @@ elif selected == "RFM Analysis":
     # محتوى قسم RFM Analysis
 
 elif selected == "Purchases Prediction":
-    st.title("Purchases Prediction")
-    # محتوى قسم Purchases Prediction
+    st.markdown("## EData Cleaning Process :")
+    intro_image_url = "https://raw.githubusercontent.com/mohamedelgendy10/DEPI-Graduation-Project/main/E7.jpg"  # الرابط المباشر للصورة الافتتاحية
+    st.image(intro_image_url, caption="", use_column_width=True)
+
+    st.markdown("## Handling missing values:")
+    intro_image_url = "https://raw.githubusercontent.com/mohamedelgendy10/DEPI-Graduation-Project/main/E8.jpg"  # الرابط المباشر للصورة الافتتاحية
+    st.image(intro_image_url, caption="", use_column_width=True)
 
 elif selected == "Meet Our Team":
     st.title("Meet Our Team")
