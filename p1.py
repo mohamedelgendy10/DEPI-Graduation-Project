@@ -46,8 +46,9 @@ if selected == "Dataset Overview":
 
     - **Transactions**: Records all transaction details, including product purchases and sales data.
     """)
-
-    intro_image_url = "https://raw.githubusercontent.com/mohamedelgendy10/DEPI-Graduation-Project/main/E1.jpg"  # الرابط المباشر للصورة الافتتاحية
+    
+    st.markdown("## Customers Sheets")
+    intro_image_url = "https://raw.githubusercontent.com/mohamedelgendy10/DEPI-Graduation-Project/main/E2.jpg"  # الرابط المباشر للصورة الافتتاحية
     st.image(intro_image_url, caption="", use_column_width=True)
 
 elif selected == "RFM Analysis":
