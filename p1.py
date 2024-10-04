@@ -1,6 +1,9 @@
 import streamlit as st
 from streamlit_option_menu import option_menu
 
+st.set_page_config(page_title="DEPI GP", page_icon="https://raw.githubusercontent.com/mohamedelgendy10/DEPI-Graduation-Project/main/images%20(2).png", layout="wide")
+
+
 # شريط جانبي للتنقل مع الأيقونات
 with st.sidebar:
     selected = option_menu(
