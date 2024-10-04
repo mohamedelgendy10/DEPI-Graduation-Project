@@ -51,26 +51,21 @@ elif selected == "Purchases Prediction":
 elif selected == "Meet Our Team":
     st.title("Meet Our Team")
     
-    # معلومات الفريق
+    # معلومات الفريق مع الروابط إلى حسابات LinkedIn
     st.markdown("""
     **Mohamed Elgendy**  
-    Project Lead  
-    Mohamed is responsible for leading the project and ensuring its success.
+    Role: Project Lead  
+    [LinkedIn Profile](https://www.linkedin.com/in/mohamed-elgendy)  
     """)
 
     st.markdown("""
     **Member 2**  
     Role: Data Analyst  
-    Responsible for analyzing the data and deriving insights.
+    [LinkedIn Profile](https://www.linkedin.com/in/member2-linkedin)  
     """)
 
     st.markdown("""
     **Member 3**  
     Role: Developer  
-    Handles the backend development and ensures the app runs smoothly.
+    [LinkedIn Profile](https://www.linkedin.com/in/member3-linkedin)  
     """)
-
-    # إضافة صور الفريق (تأكد من توفير المسار الصحيح للصور)
-    st.image("path_to_mohamed_image.jpg", caption="Mohamed Elgendy", width=100)
-    st.image("path_to_member2_image.jpg", caption="Member 2", width=100)
-    st.image("path_to_member3_image.jpg", caption="Member 3", width=100)
