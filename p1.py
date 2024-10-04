@@ -30,20 +30,34 @@ st.markdown("---")  # خط فاصل لتوضيح مكان المحتوى
 if selected == "Meet Our Team":
     st.title("Meet Our Team")
     
-    # تفاصيل الفريق
-    team_members = [
-        {"name": "Mohamed Elgendy", "role": "Project Lead", "linkedin": "www.linkedin.com/in/mohamed-rezk-elgendy"},
-        {"name": "Member 2", "role": "Data Analyst", "linkedin": "https://www.linkedin.com/in/member2"},
-        {"name": "Member 3", "role": "Developer", "linkedin": "https://www.linkedin.com/in/member3"},
-        {"name": "Member 4", "role": "Data Scientist", "linkedin": "https://www.linkedin.com/in/member4"}
-    ]
+    # تنظيم الفريق في صفين
+    st.write("---")
+    col1, col2 = st.columns([1, 1])
 
-    # تنظيم أعضاء الفريق
-    for member in team_members:
-        col1, col2 = st.columns([1, 9])
-        with col1:
-            st.image("https://cdn-icons-png.flaticon.com/512/174/174857.png", width=30)  # أيقونة LinkedIn
-        with col2:
-            st.markdown(f"**{member['name']}**")
-            st.markdown(f"*{member['role']}*")
-            st.markdown(f"[![LinkedIn]('https://cdn-icons-png.flaticon.com/512/174/174857.png')](https://{member['linkedin']})")
+    with col1:
+        st.image("https://cdn-icons-png.flaticon.com/512/174/174857.png", width=150)
+        st.markdown("### Mohamed Elgendy")
+        st.markdown("**Project Lead**")
+        st.markdown("[LinkedIn](https://www.linkedin.com/in/mohamed-rezk-elgendy)")
+    
+    with col2:
+        st.image("https://cdn-icons-png.flaticon.com/512/174/174857.png", width=150)
+        st.markdown("### Member 2")
+        st.markdown("**Data Analyst**")
+        st.markdown("[LinkedIn](https://www.linkedin.com/in/member2)")
+    
+    st.write("---")
+    
+    col3, col4 = st.columns([1, 1])
+
+    with col3:
+        st.image("https://cdn-icons-png.flaticon.com/512/174/174857.png", width=150)
+        st.markdown("### Member 3")
+        st.markdown("**Developer**")
+        st.markdown("[LinkedIn](https://www.linkedin.com/in/member3)")
+    
+    with col4:
+        st.image("https://cdn-icons-png.flaticon.com/512/174/174857.png", width=150)
+        st.markdown("### Member 4")
+        st.markdown("**Data Scientist**")
+        st.markdown("[LinkedIn](https://www.linkedin.com/in/member4)")
