@@ -27,7 +27,29 @@ with col2:
 # عرض المحتوى بناءً على القسم المختار
 st.markdown("---")  # خط فاصل لتوضيح مكان المحتوى
 
-if selected == "Meet Our Team":
+if selected == "Dataset Overview":
+    st.title("Dataset Overview")
+    
+    # إضافة صورة افتتاحية
+    intro_image_url = "https://path_to_your_intro_image.png"  # ضع رابط الصورة الافتتاحية هنا
+    st.image(intro_image_url, caption="Welcome to the Dataset Overview", use_column_width=True)
+    
+    # محتوى القسم
+    st.markdown("### Overview of the Dataset")
+    st.markdown("""
+    This section provides detailed information about the dataset used in this project.
+    """)
+    # يمكن إضافة المزيد من المحتويات هنا مثل تحميل البيانات أو عرض الجداول.
+    
+elif selected == "RFM Analysis":
+    st.title("RFM Analysis")
+    # محتوى قسم RFM Analysis
+
+elif selected == "Purchases Prediction":
+    st.title("Purchases Prediction")
+    # محتوى قسم Purchases Prediction
+
+elif selected == "Meet Our Team":
     st.title("Meet Our Team")
     
     # تنظيم الفريق في صفين
