@@ -28,18 +28,25 @@ with col2:
 st.markdown("---")  # خط فاصل لتوضيح مكان المحتوى
 
 if selected == "Dataset Overview":
-    st.title("Dataset Overview")
     
-    # إضافة صورة افتتاحية
-    intro_image_url = "https://raw.githubusercontent.com/mohamedelgendy10/DEPI-Graduation-Project/main/E0.jpg"  # الرابط المباشر للصورة الافتتاحية
-    st.image(intro_image_url, caption="Welcome to the Dataset Overview", use_column_width=True)
-    
-    # محتوى القسم
-    st.markdown("### Overview of the Dataset")
-    st.markdown("""
-    This section provides detailed information about the dataset used in this project.
-    """)
-    # يمكن إضافة المزيد من المحتويات هنا مثل تحميل البيانات أو عرض الجداول.
+# إضافة صورة افتتاحية
+intro_image_url = "https://raw.githubusercontent.com/mohamedelgendy10/DEPI-Graduation-Project/main/E0.jpg"  # الرابط المباشر للصورة الافتتاحية
+st.image(intro_image_url, caption="Welcome to the Dataset Overview", use_column_width=True)
+
+# إضافة العنوان والنص
+st.markdown("## Dataset Overview")
+st.markdown("""
+The dataset consists of four sheets, each providing key insights into different aspects of customer information:
+
+- **Customer Demographic**: Contains details about customers' age, gender, and other demographic attributes.
+
+- **New Customer List**: Includes information on newly acquired customers.
+
+- **Customer Address**: Stores address details such as state, postcode, and country.
+
+- **Transactions**: Records all transaction details, including product purchases and sales data.
+""")
+
     
 elif selected == "RFM Analysis":
     st.title("RFM Analysis")
