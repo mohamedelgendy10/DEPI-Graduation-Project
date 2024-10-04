@@ -5,7 +5,7 @@ from streamlit_option_menu import option_menu
 with st.sidebar:
     selected = option_menu(
         menu_title="Main Menu",  # عنوان القائمة
-        options=["Dataset Overview", "Data Preparation", "RFM Analysis", "Meet Our Team"],  # الأقسام
+        options=["Dataset Overview", "Data Preparation", "RFM Analysis", "Meet Our Team", "Predictions"],  # الأقسام
         icons=["info-circle", "bar-chart-line", "graph-up-arrow", "people-fill"],  # أيقونات الأقسام
         menu_icon="cast",  # أيقونة القائمة
         default_index=0,  # الخيار الافتراضي
@@ -165,19 +165,107 @@ elif selected == "Data Preparation":
 
 elif selected == "RFM Analysis":
 
-    st.markdown("## Dataset Overview")
+    st.markdown("## RFM Analysis Overview")
     st.markdown("""
-    The dataset consists of four sheets, each providing key insights into different aspects of customer information:
+    RFM analysis is a method used to assess and categorize customers based on their purchasing behavior.
+    
+    RFM Components:
+    
+    Recency (R): Measures how long it has been since a customer last made a purchase. Customers who have bought more recently are more likely to make repeat purchases.
+    
+    Frequency (F): Represents how often a customer makes purchases. Customers who buy more frequently are typically more engaged and loyal.
+    
+    Monetary Value (M): Indicates the total amount a customer has spent over a specific period. Customers who spend more are generally viewed as more valuable.
 
-    - **Customer Demographic**: Contains details about customers' age, gender, and other demographic attributes.
+    """)
+    intro_image_url = "https://raw.githubusercontent.com/mohamedelgendy10/DEPI-Graduation-Project/main/E15.jpg"  # الرابط المباشر للصورة الافتتاحية
+    st.image(intro_image_url, caption="", use_column_width=True)
 
-    - **New Customer List**: Includes information on newly acquired customers.
+    st.markdown("## Benefits of RFM Analysis:")
+    st.markdown("""
+    Customer Segmentation: Helps identify and group customers based on their purchase behavior, enabling targeted marketing strategies.
+    Personalized Marketing: Allows businesses to tailor campaigns and offers based on each segment’s buying habits.
+    Customer Retention: Helps focus on high-value and recently active customers, improving retention rates and customer loyalty.
+    Optimized Resource Allocation: Guides businesses in allocating resources effectively by prioritizing high-potential customers.
+    Increased ROI: By targeting the right customers, RFM analysis can lead to better marketing results and higher returns on investment.
+    Improved Customer Understanding: Provides deep insights into customer preferences, allowing businesses to enhance the overall customer experience.
 
-    - **Customer Address**: Stores address details such as state, postcode, and country.
-
-    - **Transactions**: Records all transaction details, including product purchases and sales data.
     """)
 
+    intro_image_url = "https://raw.githubusercontent.com/mohamedelgendy10/DEPI-Graduation-Project/main/E16.jpg"  # الرابط المباشر للصورة الافتتاحية
+    st.image(intro_image_url, caption="", use_column_width=True)
+
+    intro_image_url = "https://raw.githubusercontent.com/mohamedelgendy10/DEPI-Graduation-Project/main/E17.jpg"  # الرابط المباشر للصورة الافتتاحية
+    st.image(intro_image_url, caption="", use_column_width=True)
+
+    st.markdown("## Customer Segmentation:")
+    st.markdown("""
+    Customers can be classified into segments such as Champions, Loyal Customers, or At Risk, each requiring distinct strategies. The current segmentation prioritizes Recency and Frequency for the following reasons:
+    
+    Simplified Analysis: By summation the three rank values
+    
+    Behavior vs. Revenue: Although Monetary value is significant for measuring a customer’s financial impact, categories like Champions and Loyal Customers are defined more by their purchasing behavior—how often and how recently they buy—making these metrics ideal for strategies aimed at customer engagement.
+
+    """)
+    
+    intro_image_url = "https://raw.githubusercontent.com/mohamedelgendy10/DEPI-Graduation-Project/main/E18.jpg"  # الرابط المباشر للصورة الافتتاحية
+    st.image(intro_image_url, caption="", use_column_width=True)
+
+    intro_image_url = "https://raw.githubusercontent.com/mohamedelgendy10/DEPI-Graduation-Project/main/E19.jpg"  # الرابط المباشر للصورة الافتتاحية
+    st.image(intro_image_url, caption="", use_column_width=True)
+
+    intro_image_url = "https://raw.githubusercontent.com/mohamedelgendy10/DEPI-Graduation-Project/main/E20.jpg"  # الرابط المباشر للصورة الافتتاحية
+    st.image(intro_image_url, caption="", use_column_width=True)
+
+    intro_image_url = "https://raw.githubusercontent.com/mohamedelgendy10/DEPI-Graduation-Project/main/E21.jpg"  # الرابط المباشر للصورة الافتتاحية
+    st.image(intro_image_url, caption="", use_column_width=True)
+
+    intro_image_url = "https://raw.githubusercontent.com/mohamedelgendy10/DEPI-Graduation-Project/main/E22.jpg"  # الرابط المباشر للصورة الافتتاحية
+    st.image(intro_image_url, caption="", use_column_width=True)
+
+    intro_image_url = "https://raw.githubusercontent.com/mohamedelgendy10/DEPI-Graduation-Project/main/E23.jpg"  # الرابط المباشر للصورة الافتتاحية
+    st.image(intro_image_url, caption="", use_column_width=True)
+
+    intro_image_url = "https://raw.githubusercontent.com/mohamedelgendy10/DEPI-Graduation-Project/main/E24.jpg"  # الرابط المباشر للصورة الافتتاحية
+    st.image(intro_image_url, caption="", use_column_width=True)
+
+    intro_image_url = "https://raw.githubusercontent.com/mohamedelgendy10/DEPI-Graduation-Project/main/E25.jpg"  # الرابط المباشر للصورة الافتتاحية
+    st.image(intro_image_url, caption="", use_column_width=True)
+
+    intro_image_url = "https://raw.githubusercontent.com/mohamedelgendy10/DEPI-Graduation-Project/main/E26.jpg"  # الرابط المباشر للصورة الافتتاحية
+    st.image(intro_image_url, caption="", use_column_width=True)
+
+    intro_image_url = "https://raw.githubusercontent.com/mohamedelgendy10/DEPI-Graduation-Project/main/E27.jpg"  # الرابط المباشر للصورة الافتتاحية
+    st.image(intro_image_url, caption="", use_column_width=True)
+
+    intro_image_url = "https://raw.githubusercontent.com/mohamedelgendy10/DEPI-Graduation-Project/main/E28.jpg"  # الرابط المباشر للصورة الافتتاحية
+    st.image(intro_image_url, caption="", use_column_width=True)
+
+
+
+elif selected == "Predictions":
+    
+    intro_image_url = "https://raw.githubusercontent.com/mohamedelgendy10/DEPI-Graduation-Project/main/E29.jpg"  # الرابط المباشر للصورة الافتتاحية
+    st.image(intro_image_url, caption="", use_column_width=True)
+
+    intro_image_url = "https://raw.githubusercontent.com/mohamedelgendy10/DEPI-Graduation-Project/main/E30.jpg"  # الرابط المباشر للصورة الافتتاحية
+    st.image(intro_image_url, caption="", use_column_width=True)
+    
+    intro_image_url = "https://raw.githubusercontent.com/mohamedelgendy10/DEPI-Graduation-Project/main/E31.jpg"  # الرابط المباشر للصورة الافتتاحية
+    st.image(intro_image_url, caption="", use_column_width=True)
+
+    intro_image_url = "https://raw.githubusercontent.com/mohamedelgendy10/DEPI-Graduation-Project/main/E32.jpg"  # الرابط المباشر للصورة الافتتاحية
+    st.image(intro_image_url, caption="", use_column_width=True)
+
+    intro_image_url = "https://raw.githubusercontent.com/mohamedelgendy10/DEPI-Graduation-Project/main/E33.jpg"  # الرابط المباشر للصورة الافتتاحية
+    st.image(intro_image_url, caption="", use_column_width=True)
+
+    intro_image_url = "https://raw.githubusercontent.com/mohamedelgendy10/DEPI-Graduation-Project/main/E34.jpg"  # الرابط المباشر للصورة الافتتاحية
+    st.image(intro_image_url, caption="", use_column_width=True)
+
+    intro_image_url = "https://raw.githubusercontent.com/mohamedelgendy10/DEPI-Graduation-Project/main/E35.jpg"  # الرابط المباشر للصورة الافتتاحية
+    st.image(intro_image_url, caption="", use_column_width=True)
+    
 elif selected == "Meet Our Team":
     st.title("Meet Our Team")
     
@@ -198,10 +286,10 @@ elif selected == "Meet Our Team":
 
     # العضو الثاني - Member 2
     with col2:
-        st.markdown("### Member 2")
+        st.markdown("###Ahmed Elsayed Mohamed ")
         st.markdown("**Data Analyst**")
         linkedin_icon_member2 = """
-            <a href="https://www.linkedin.com/in/member2" target="_blank">
+            <a href="https://www.linkedin.com/inahmed-elsayed-406366218?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bx%2FiMBw" target="_blank">
                 <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" width="30">
             </a>
         """
@@ -213,10 +301,10 @@ elif selected == "Meet Our Team":
 
     # العضو الثالث - Member 3
     with col3:
-        st.markdown("### Member 3")
+        st.markdown("###Abdelerahman Mohamed faried")
         st.markdown("**Developer**")
         linkedin_icon_member3 = """
-            <a href="https://www.linkedin.com/in/member3" target="_blank">
+            <a href="https://www.linkedin.com/in/abdelrahman-mohamed-7750532a6" target="_blank">
                 <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" width="30">
             </a>
         """
@@ -224,10 +312,10 @@ elif selected == "Meet Our Team":
 
     # العضو الرابع - Member 4
     with col4:
-        st.markdown("### Member 4")
+        st.markdown("###Mennatullah Muhammad Mahmoud ")
         st.markdown("**Data Scientist**")
         linkedin_icon_member4 = """
-            <a href="https://www.linkedin.com/in/member4" target="_blank">
+            <a href="https://www.linkedin.com/in/mennatullah-muhammad-b15826232/" target="_blank">
                 <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" width="30">
             </a>
         """
