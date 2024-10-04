@@ -147,7 +147,21 @@ elif selected == "Data Preparation":
     Merge Address Data: Unified address details like address, postcode, state, country, and property valuation for both old and new customers.
     
     """)
-    
+
+    intro_image_url = "https://raw.githubusercontent.com/mohamedelgendy10/DEPI-Graduation-Project/main/E11.jpg"  # الرابط المباشر للصورة الافتتاحية
+    st.image(intro_image_url, caption="", use_column_width=True)
+
+    intro_image_url = "https://raw.githubusercontent.com/mohamedelgendy10/DEPI-Graduation-Project/main/E12.jpg"  # الرابط المباشر للصورة الافتتاحية
+    st.image(intro_image_url, caption="", use_column_width=True)
+
+    intro_image_url = "https://raw.githubusercontent.com/mohamedelgendy10/DEPI-Graduation-Project/main/E13.jpg"  # الرابط المباشر للصورة الافتتاحية
+    st.image(intro_image_url, caption="", use_column_width=True)
+
+    intro_image_url = "https://raw.githubusercontent.com/mohamedelgendy10/DEPI-Graduation-Project/main/E14.jpg"  # الرابط المباشر للصورة الافتتاحية
+    st.image(intro_image_url, caption="", use_column_width=True)
+
+
+
 
 elif selected == "Purchases Prediction":
 
