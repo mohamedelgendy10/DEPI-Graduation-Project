@@ -6,7 +6,7 @@ with st.sidebar:
     selected = option_menu(
         menu_title="Main Menu",  # عنوان القائمة
         options=["Dataset Overview", "Data Preparation", "RFM Analysis",  "Predictions", "Meet Our Team"],  # الأقسام
-        icons=["info-circle", "bar-chart-line", "graph-up-arrow", "people-fill"],  # أيقونات الأقسام
+        icons=["info-circle", "bar-chart-line", "graph-up-arrow", "bar-chart-line", "people-fill"],  # أيقونات الأقسام
         menu_icon="cast",  # أيقونة القائمة
         default_index=0,  # الخيار الافتراضي
     )
@@ -302,7 +302,7 @@ elif selected == "Meet Our Team":
     # العضو الثالث - Member 3
     with col3:
         st.markdown("### Abdelerahman Mohamed faried")
-        st.markdown("**r**")
+        st.markdown("****")
         linkedin_icon_member3 = """
             <a href="https://www.linkedin.com/in/abdelrahman-mohamed-7750532a6" target="_blank">
                 <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" width="30">
