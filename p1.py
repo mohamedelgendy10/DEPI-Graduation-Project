@@ -36,7 +36,6 @@ if selected == "Meet Our Team":
 
     # العضو الأول - Mohamed Elgendy
     with col1:
-        st.image("https://cdn-icons-png.flaticon.com/512/174/174857.png", width=150)
         st.markdown("### Mohamed Elgendy")
         st.markdown("**Project Lead**")
         linkedin_icon_mohamed = """
@@ -48,7 +47,6 @@ if selected == "Meet Our Team":
 
     # العضو الثاني - Member 2
     with col2:
-        st.image("https://cdn-icons-png.flaticon.com/512/174/174857.png", width=150)
         st.markdown("### Member 2")
         st.markdown("**Data Analyst**")
         linkedin_icon_member2 = """
@@ -64,7 +62,6 @@ if selected == "Meet Our Team":
 
     # العضو الثالث - Member 3
     with col3:
-        st.image("https://cdn-icons-png.flaticon.com/512/174/174857.png", width=150)
         st.markdown("### Member 3")
         st.markdown("**Developer**")
         linkedin_icon_member3 = """
@@ -76,7 +73,6 @@ if selected == "Meet Our Team":
 
     # العضو الرابع - Member 4
     with col4:
-        st.image("https://cdn-icons-png.flaticon.com/512/174/174857.png", width=150)
         st.markdown("### Member 4")
         st.markdown("**Data Scientist**")
         linkedin_icon_member4 = """
